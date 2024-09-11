@@ -4,24 +4,11 @@
 //LOAD REPORTS
 //DELETE REPORTS - done 
 //MARK REPORTS AS DONE - done 
-
-import workers from './data';
-
 let reports = []
 
 const addRB = document.querySelector('.addbtn');
 const reportInput = document.querySelector('#reportInput');
 const reportContainer = document.querySelector('.reports');
-
-const username = document.querySelector('.username');
-const password  = document.querySelector('.password');
-
-const checkuserLogin = () => {
-    username.value 
-    password.value 
-};
-
-checkuserLogin()
 
 const localKey = "Sandiso123";
 
@@ -60,8 +47,12 @@ const renderReports = () => {
         }
 
         //APPENDING THE OBOVE CHILD NODES TP THE REPORT DIV
-        Rport.appendChild(deleteBtn);
-        Rport.appendChild(doneBtn);
+        const btnCont = document.createElement('div');
+        btnCont.className = "btnCont";
+        btnCont.appendChild(deleteBtn);
+        btnCont.appendChild(doneBtn);
+
+        Rport.appendChild(btnCont);
 
         reportContainer.appendChild(Rport);
 
@@ -72,6 +63,14 @@ const renderReports = () => {
 
 
 //ADDING THE REPORTS IN THE ARRAY TO LATER BE ALSO ABLE TO SAVE AND LOAD THEM FOR PERSISTANCE
+const sec = document.querySelector('.btnContainer');
+
+const addbtnInJs = document.createElement('button');
+addbtnInJs.textContent = "Add Report";
+addbtnInJs.className = "addBtn"
+sec.appendChild(addbtnInJs);
+addbtnInJs.onclick = () => addRport();
+
 const addRport = () => {
     let value = reportInput.value
     if(!value) alert("Can not add an empty report please try again..!");
@@ -111,8 +110,6 @@ defactBtn.addEventListener('click', () => {
     overLay.style.display = "none";
     modal.style.display = "none";
 });
-
-
 
 
 //USING LOCAL STORAGE TO SAVE THE REPORTS LOGGED TO KEEP THE APPLICATION PERSISTANT

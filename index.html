@@ -15,11 +15,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
 
+    <script src="login.js" type="module"></script>
+
     <title>Local Link To Do App</title>
 </head>
 <body >
-
-    <div class="loginBg"></div>
+        <!--LOG IN PAGE -->
+    <div class="loginBg" ></div>
     <div class="loginContainer">
         <div class="login">
             <div class="log">
@@ -27,15 +29,14 @@
                 <div class="inputs">
                     <input type="text" class="username" placeholder="username">
                     <input type="text" class="password" placeholder="passcode / word">
-        
-                    <button class="loginBtn">Login</button>
+                    <div class="logInBtnContainer"></div>
                 </div>
                     
                 <div class="note">
                     <h3>LOCAL LINK PORTAL</h3>
                     <h4>Please Enter your login credentials.</h4>
                     <p>This is a private company portal so no outside candidates are allowed to create accounts.</p>
-                    <span>Thank you. </span>
+                    <span>Thank you.</span>
                 </div>
 
             </div>
@@ -44,28 +45,30 @@
     
     <div class="overlay"></div>
     <div class="bg"></div>
-    <h1>LOCAL <span>LINK</span></h1>
+    <h1 class="mobiH">LOCAL <span>LINK</span></h1>
 
-    <section>
+    <section style="display: none;" >
      
             <h2>Weekly Reports</h2>
 
             <textarea placeholder="Type your week report..." id="reportInput"></textarea>
-            <button class="addBtn" onclick="addRport()">Add report</button>
+            <div class="btnContainer"></div>
 
             <div class="reports"></div>
 
-      
+                     <!--CONFIRMATION OF DELETE MODAL-->
             <div class="modal">
                 <p>ARE YOU SURE YOU WANT TO DELE THE REPORT ? </p><br>
                 <p>Because this can not be undone !!</p>
 
-                <button class="confirm Btn">Yes</button>
-                <button class="defact Btn">No</button>
+                <div class="modalBtn">
+                    <button class="confirm Btn">Yes</button>
+                    <button class="defact Btn">No</button>
+                </div>
             </div>
            
     </section>
 
-    <script src="app.js"></script>
+    <script src="app.js" type="module"></script>
 </body>
 </html>
