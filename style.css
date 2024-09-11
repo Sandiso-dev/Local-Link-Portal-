@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background: url(./assests/bg1.jpg);
+    height: 100%;
+    color: rgb(91, 214, 245);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    overflow: hidden;
+
+}
+section{
+    position: relative;
+    padding: 17px;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 80vh;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    background: rgba(34, 33, 33, 0.144);
+    border: 1px solid rgb(150, 146, 146);
+    border-radius: 9px;
+
+ 
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+textarea{
+    width: 70%;
+    height: 69px;
+    padding-top: 30px;
+    padding-left: 10px;
+    border: 2px solid rgb(91, 214, 245);
+    border-radius: 6px;
+    font-weight: 600;
+    color: black;
+    margin-top: 30px;
+}
+.addBtn{
+    padding: 6px;
+    color: white;
+    background: none;
+    margin-left: 20px;
+    border: 2px solid rgb(91, 214, 245);
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.reports{
+    background: rgba(255, 255, 255, 0.445);
+    padding: 9px;
+    height: 50vh;
+    border: 2px solid rgb(91, 214, 245);
+    border-radius: 4px;
+    color: black;
+    margin-top: 15px;
+}
+
+.reports > .report{
+    display: flex;
+    border: 2px solid rgb(34, 139, 165);
+    padding: 9px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+
+}
+
+.Btn{
+    margin-left: 10px;
+    background: rgba(0, 0, 0, 0.336);
+    color: rgb(14, 25, 27);
+    border: 2px solid rgb(91, 214, 245);
+    border-radius: 9px;
+    width: 60px;
+    padding: 9px;
+}
+.Btn:hover{
+    margin-left: 12px;
+    background: rgb(91, 214, 245);
+    color: rgb(14, 25, 27);
+    border: 2px solid  rgba(0, 0, 0, 0.336);
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+.overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.589);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.modal{
+    background: white;
+    color: red;
+    height: 25vh;
+    padding: 12px;
+    width: 40%;
+    border: 2px solid red;
+    border-radius: 7px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 500px;
+    display: none;
+
+}
+
+.modal > button{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 950px){
+
+    .modal{
+        width: 60%;
+    }
+};

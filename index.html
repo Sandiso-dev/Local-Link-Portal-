@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+    <title>Local Link To Do App</title>
+</head>
+<body >
+
+    <div class="loginBg"></div>
+    <div class="loginContainer">
+        <div class="login">
+            <div class="log">
+
+                <div class="inputs">
+                    <input type="text" class="username" placeholder="username">
+                    <input type="text" class="password" placeholder="passcode / word">
+        
+                    <button class="loginBtn">Login</button>
+                </div>
+                    
+                <div class="note">
+                    <h3>LOCAL LINK PORTAL</h3>
+                    <h4>Please Enter your login credentials.</h4>
+                    <p>This is a private company portal so no outside candidates are allowed to create accounts.</p>
+                    <span>Thank you. </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="overlay"></div>
+    <div class="bg"></div>
+    <h1>LOCAL <span>LINK</span></h1>
+
+    <section>
+     
+            <h2>Weekly Reports</h2>
+
+            <textarea placeholder="Type your week report..." id="reportInput"></textarea>
+            <button class="addBtn" onclick="addRport()">Add report</button>
+
+            <div class="reports"></div>
+
+      
+            <div class="modal">
+                <p>ARE YOU SURE YOU WANT TO DELE THE REPORT ? </p><br>
+                <p>Because this can not be undone !!</p>
+
+                <button class="confirm Btn">Yes</button>
+                <button class="defact Btn">No</button>
+            </div>
+           
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
