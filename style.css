@@ -196,7 +196,7 @@ textarea{
     margin-top: 10px;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 650px){
 
     .modal{
        height: 25vh;
@@ -204,10 +204,11 @@ textarea{
     }
 
     .modalBtn{
-        display: flex
+        display: flex;
+        margin-top: 10px;
     }
 };
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1000px){
 
     .modal{
         width: 60%;
